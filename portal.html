@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meu Portal de Entretenimento Digital</title>
+
+	<!-- CSS EXTERNO: o reset vem ANTES da folha de estilo principal -->
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="estilo.css">
+
+	<!-- CSS INTERNO: cor do título de cada seção, definida por ID -->
+	<style>
+		#filmes .titulo-secao { color: #e50914; }
+		#musica .titulo-secao { color: #1db954; }
+		#games  .titulo-secao { color: #7b61ff; }
+		header h1 { font-size: 36px; color: #ffffff; }
+	</style>
+</head>
+<body>
+
+	<header>
+		<h1>Meu Portal de Entretenimento Digital</h1>
+		<!-- CSS INLINE: estilo aplicado direto no elemento -->
+		<p style="color: #bbbbbb; font-style: italic; margin-top: 10px;">Filmes, música e games em um só lugar</p>
+	</header>
+
+	<main class="container">
+
+		<!-- Seção 1 -->
+		<section class="secao" id="filmes">
+			<h2 class="titulo-secao">Filmes e Séries</h2>
+			<img class="img-secao" src="https://picsum.photos/seed/cinema/400/250" alt="Sala de cinema">
+			<p class="texto">O cinema e o streaming mudaram a forma de assistir histórias. Hoje é possível maratonar séries inteiras em um único fim de semana.</p>
+			<img class="img-secao" src="https://picsum.photos/seed/streaming/400/250" alt="Assistindo séries na TV">
+			<p class="texto">Plataformas como Netflix e Prime Video reúnem clássicos, lançamentos e produções originais.</p>
+			<img class="img-secao" src="https://picsum.photos/seed/pipoca/400/250" alt="Pipoca e filme">
+			<p class="texto">Drama, ação, comédia ou terror: há um título para cada gosto e cada momento.</p>
+		</section>
+
+		<!-- Seção 2 -->
+		<section class="secao" id="musica">
+			<h2 class="titulo-secao">Música e Podcasts</h2>
+			<img class="img-secao" src="https://picsum.photos/seed/musica/400/250" alt="Fones de ouvido">
+			<p class="texto">Com aplicativos como Spotify e YouTube Music, milhões de músicas cabem no bolso.</p>
+			<img class="img-secao" src="https://picsum.photos/seed/show/400/250" alt="Show ao vivo">
+			<p class="texto">Os shows ao vivo continuam sendo uma das experiências musicais mais marcantes.</p>
+			<img class="img-secao" src="https://picsum.photos/seed/podcast/400/250" alt="Microfone de podcast">
+			<p class="texto">Os podcasts crescem a cada ano e falam de tudo: humor, ciência, esportes e notícias.</p>
+		</section>
+
+		<!-- Seção 3 -->
+		<section class="secao" id="games">
+			<h2 class="titulo-secao">Games e Tecnologia</h2>
+			<img class="img-secao" src="https://picsum.photos/seed/games/400/250" alt="Controle de videogame">
+			<p class="texto">Os games viraram uma das maiores indústrias do entretenimento, com consoles, PC e celular.</p>
+			<img class="img-secao" src="https://picsum.photos/seed/tecnologia/400/250" alt="Setup gamer">
+			<p class="texto">Placas de vídeo, monitores de alta taxa de atualização e internet rápida deixam a experiência mais fluida.</p>
+			<img class="img-secao" src="https://picsum.photos/seed/vr/400/250" alt="Óculos de realidade virtual">
+			<p class="texto">Realidade virtual e inteligência artificial apontam o futuro dos jogos.</p>
+		</section>
+
+	</main>
+
+	<footer>
+		<p>&copy; 2026 - Meu Portal de Entretenimento Digital</p>
+	</footer>
+
+</body>
+</html>

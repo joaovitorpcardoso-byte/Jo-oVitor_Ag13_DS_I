@@ -1,0 +1,87 @@
+/* ==========================================================
+   ESTILO PRINCIPAL - Meu Portal de Entretenimento Digital
+   (CSS EXTERNO - vinculado depois do reset.css)
+   ========================================================== */
+
+/* ---------- Base da página ---------- */
+body {
+	font-family: Arial, Helvetica, sans-serif; /* fonte padrão do texto */
+	background-color: #121212;                 /* fundo escuro */
+	color: #e0e0e0;
+	line-height: 1.6;                          /* o reset zerou, então definimos aqui */
+}
+
+/* ---------- Cabeçalho e rodapé ---------- */
+header {
+	text-align: center;
+	padding: 30px 20px;
+	background-color: #1f1f1f;
+	border-bottom: 3px solid #ffffff22;
+}
+
+footer {
+	text-align: center;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #1f1f1f;
+	font-size: 14px;
+}
+
+/* ---------- FLEXBOX: layout das 3 seções lado a lado ---------- */
+.container {
+	display: flex;        /* ativa o Flexbox: filhos ficam em linha */
+	flex-direction: row;  /* seções lado a lado (colunas) */
+	gap: 20px;            /* espaço entre as colunas */
+	padding: 20px;
+}
+
+/* Cada seção ocupa o mesmo espaço (3 colunas ajustáveis) */
+.secao {
+	flex: 1;              /* cresce igualmente: 1/3 da largura cada */
+	min-width: 0;         /* evita que o conteúdo "estoure" a coluna */
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #1e1e1e;
+}
+
+/* ---------- CLASSES: padronizam títulos, textos e imagens ---------- */
+
+/* Classe aplicada a todos os títulos de seção */
+.titulo-secao {
+	font-family: Georgia, "Times New Roman", serif; /* fonte dos títulos */
+	font-size: 26px;
+	text-align: center;
+	margin-bottom: 15px;
+	padding-bottom: 8px;
+	border-bottom: 2px solid currentColor; /* usa a cor definida pelo ID */
+}
+
+/* Classe aplicada a todas as imagens */
+.img-secao {
+	display: block;       /* imagem como bloco para centralizar */
+	width: 100%;          /* ocupa toda a largura da coluna */
+	height: 160px;
+	object-fit: cover;    /* recorta sem deformar a imagem */
+	border-radius: 8px;
+	margin: 15px 0 8px 0;
+}
+
+/* Classe do texto explicativo */
+.texto {
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+/* ---------- IDs: cada seção tem identidade própria ---------- */
+/* (a cor dos títulos de cada ID está no CSS interno do HTML) */
+#filmes { border-top: 5px solid #e50914; } /* vermelho */
+#musica { border-top: 5px solid #1db954; } /* verde */
+#games  { border-top: 5px solid #7b61ff; } /* roxo */
+
+/* ---------- Responsividade ---------- */
+/* Em telas pequenas, as colunas empilham uma sobre a outra */
+@media (max-width: 800px) {
+	.container {
+		flex-direction: column;
+	}
+}
